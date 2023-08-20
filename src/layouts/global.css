@@ -1,0 +1,15 @@
+:root {
+  color-scheme: dark;
+  font-family: monospace;
+  font-size: 1.5em;
+  --color: green;
+  --accent: lime;
+  background-color: black;
+  color: white;
+}
+a {
+  color: var(--color);
+}
+a:hover {
+  color: var(--accent);
+}
