@@ -33,3 +33,11 @@ video {
 * {
   box-sizing: border-box;
 }
+h1 {
+  padding-top: 3em;
+}
+hr {
+  padding-top: 5em;
+  border: none;
+  border-bottom: 2px solid white;
+}
