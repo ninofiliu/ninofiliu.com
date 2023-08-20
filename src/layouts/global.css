@@ -13,3 +13,23 @@ a {
 a:hover {
   color: var(--accent);
 }
+body {
+  display: flex;
+  margin: 0;
+  max-width: 1920px;
+  margin: auto;
+}
+body > * {
+  width: 50%;
+}
+article {
+  padding: 1em;
+}
+img,
+video {
+  width: 100%;
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
