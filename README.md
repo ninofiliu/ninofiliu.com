@@ -21,4 +21,3 @@ TODO
 - [ ] analytics
 - [ ] deploy
 - [ ] add a few VJ rips
-- [ ] add vimeo links
