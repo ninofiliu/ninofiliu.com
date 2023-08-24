@@ -2,6 +2,7 @@
   color-scheme: dark;
   font-family: monospace;
   font-size: 1.5em;
+  /* should be in sync with Dither.astro */
   --color: green;
   --accent: lime;
   background-color: black;

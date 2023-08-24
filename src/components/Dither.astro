@@ -5,6 +5,12 @@
 </div>
 
 <script>
+  // should be in sync with global.css
+  const theme = {
+    color: "green",
+    accent: "lime",
+  };
+
   const gcd = (a: number, b: number): number => (b ? gcd(b, a % b) : a);
 
   const canvas = document.querySelector("canvas")!;
@@ -28,8 +34,9 @@
   const paint = async () => {
     const palette = [
       "black",
-      getComputedStyle(document.documentElement).getPropertyValue("--color"),
-      getComputedStyle(document.documentElement).getPropertyValue("--accent"),
+      theme.color,
+      theme.accent,
+      "lime",
       "white",
       "white",
       "white",
