@@ -85,8 +85,10 @@
     }
   };
 
-  while (true) {
+  const loop = async () => {
     await paint();
     await mess();
-  }
+    requestAnimationFrame(loop);
+  };
+  loop();
 </script>

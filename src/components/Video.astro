@@ -1,11 +1,7 @@
----
-const { desktop, mobile } = Astro.props;
----
-
 <video
   data-name="Video"
-  data-desktop={desktop}
-  data-mobile={mobile}
+  data-desktop={Astro.props.desktop}
+  data-mobile={Astro.props.mobile}
   muted
   autoplay
   loop
@@ -30,7 +26,6 @@ const { desktop, mobile } = Astro.props;
     },
     { rootMargin: "100px" },
   );
-
   for (const video of videos) {
     observer.observe(video);
   }
