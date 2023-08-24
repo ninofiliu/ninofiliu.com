@@ -42,3 +42,14 @@ hr {
   border: none;
   border-bottom: 2px solid white;
 }
+@media screen and (max-width: 960px) {
+  :root {
+    font-size: initial;
+  }
+  body > *:nth-child(1) {
+    width: 66%;
+  }
+  body > *:nth-child(2) {
+    width: 34%;
+  }
+}
