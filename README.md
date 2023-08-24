@@ -19,6 +19,5 @@ TODO
 
 - [ ] SEO
 - [ ] analytics
-- [ ] optimize media
 - [ ] mobile
 - [ ] deploy
