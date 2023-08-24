@@ -17,8 +17,8 @@ Deploy
 
 TODO
 
-- [ ] profile pic
 - [ ] SEO
 - [ ] analytics
 - [ ] optimize media
 - [ ] mobile
+- [ ] deploy
