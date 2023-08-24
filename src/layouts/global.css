@@ -15,12 +15,13 @@ a:hover {
 }
 body {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   max-width: 1920px;
-  margin: auto;
 }
 body > * {
   width: 50%;
+  height: 100vh;
+  overflow-y: auto;
 }
 article {
   padding: 1em;

@@ -20,5 +20,6 @@ TODO
 - [ ] profile pic
 - [ ] SEO
 - [ ] analytics
-- [ ] double scroll
+- [ ] all pics
+- [ ] optimize media
 - [ ] mobile
