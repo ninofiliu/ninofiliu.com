@@ -20,6 +20,5 @@ TODO
 - [ ] profile pic
 - [ ] SEO
 - [ ] analytics
-- [ ] all pics
 - [ ] optimize media
 - [ ] mobile
