@@ -7,17 +7,26 @@ Astro + Netlify
 Local dev
 
 ```sh
+# once
 pnpm install
+# always
 pnpm run dev
 ```
 
 Deploy
 
-<!-- TODO -->
+```sh
+# once
+pnpm add -g netlify-cli
+ntl login
+ntl link
+# always
+pnpm run build
+ntl deploy -d dist
+```
 
 TODO
 
 - [ ] SEO
 - [ ] analytics
-- [ ] deploy
 - [ ] add a few VJ rips
