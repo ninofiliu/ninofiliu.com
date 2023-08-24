@@ -19,6 +19,6 @@ TODO
 
 - [ ] SEO
 - [ ] analytics
-- [ ] lazy loading
+- [ ] lazy load videos
 - [ ] mobile optimizations
 - [ ] deploy
