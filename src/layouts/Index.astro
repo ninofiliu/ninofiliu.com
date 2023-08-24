@@ -1,6 +1,7 @@
 ---
 import "./global.css";
 import Dither from "../components/Dither.astro";
+import Video from "../components/Video.astro";
 ---
 
 <html lang="en">
@@ -70,7 +71,7 @@ import Dither from "../components/Dither.astro";
         sizes="(max-width: 960px) 320px, 960px"
         style="min-height: 164px;"
       />
-      <video src="7.mp4" muted autoplay loop playsinline></video>
+      <Video desktop="desktop/7.mp4" mobile="mobile/7.webm" />
       <img
         loading="lazy"
         src="desktop/8.jpg"
@@ -141,7 +142,7 @@ import Dither from "../components/Dither.astro";
         sizes="(max-width: 960px) 320px, 960px"
         style="min-height: 164px;"
       />
-      <video src="19.webm" muted autoplay loop playsinline></video>
+      <Video desktop="desktop/19.webm" mobile="mobile/19.webm" />
       <img
         loading="lazy"
         src="desktop/20.jpg"
@@ -149,7 +150,7 @@ import Dither from "../components/Dither.astro";
         sizes="(max-width: 960px) 320px, 960px"
         style="min-height: 164px;"
       />
-      <video src="21.mp4" muted autoplay loop playsinline></video>
+      <Video desktop="desktop/21.mp4" mobile="mobile/21.webm" />
       <img
         loading="lazy"
         src="desktop/22.jpg"
@@ -171,7 +172,7 @@ import Dither from "../components/Dither.astro";
         sizes="(max-width: 960px) 320px, 960px"
         style="min-height: 164px;"
       />
-      <video src="25.mp4" muted autoplay loop playsinline></video>
+      <Video desktop="desktop/25.mp4" mobile="mobile/25.webm" />
     </div>
   </body>
 </html>

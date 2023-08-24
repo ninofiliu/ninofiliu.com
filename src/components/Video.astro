@@ -1,0 +1,37 @@
+---
+const { desktop, mobile } = Astro.props;
+---
+
+<video
+  data-name="Video"
+  data-desktop={desktop}
+  data-mobile={mobile}
+  muted
+  autoplay
+  loop
+  playsinline
+  preload="none"></video>
+
+<script>
+  const isMobile = innerWidth < 960;
+  const videos = document.querySelectorAll(
+    "video[data-name=Video]",
+  ) as unknown as HTMLVideoElement[];
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const video = entry.target as HTMLVideoElement;
+          const src = video.dataset[isMobile ? "mobile" : "desktop"]!;
+          video.src = src;
+          observer.unobserve(video);
+        }
+      }
+    },
+    { rootMargin: "100px" },
+  );
+
+  for (const video of videos) {
+    observer.observe(video);
+  }
+</script>

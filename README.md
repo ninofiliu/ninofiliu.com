@@ -19,5 +19,6 @@ TODO
 
 - [ ] SEO
 - [ ] analytics
-- [ ] lazy load videos
 - [ ] deploy
+- [ ] add a few VJ rips
+- [ ] add vimeo links
