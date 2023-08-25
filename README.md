@@ -28,5 +28,7 @@ ntl deploy -d dist
 TODO
 
 - [ ] SEO
-- [ ] analytics
-- [ ] add a few VJ rips
+- [ ] add content
+  - vj rips
+  - xyft
+  - ???
