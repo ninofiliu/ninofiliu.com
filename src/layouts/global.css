@@ -3,8 +3,8 @@
   font-family: monospace;
   font-size: 1.5em;
   /* should be in sync with Dither.astro */
-  --color: #0a0;
-  --accent: #0f0;
+  --color: #4b4;
+  --accent: lime;
   background-color: black;
   color: white;
 }
@@ -38,6 +38,7 @@ video {
 }
 h1 {
   padding-top: 3em;
+  color: var(--color);
 }
 hr {
   padding-top: 5em;
