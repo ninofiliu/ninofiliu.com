@@ -9,6 +9,9 @@ Local dev
 ```sh
 # once
 pnpm install
+# on media update
+source ./build-media-files.sh
+tsx ./build-media-index.ts
 # always
 pnpm run dev
 ```
@@ -28,3 +31,7 @@ ntl deploy -d dist
 TODO
 
 - [ ] SEO
+- [ ] articles: first contact
+- [ ] articles: but the flesh is weak
+- [ ] articles: room xyft
+- [ ] articles: as if my phone cares about museums
