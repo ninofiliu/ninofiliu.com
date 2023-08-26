@@ -15,12 +15,15 @@ a:hover {
   color: var(--accent);
 }
 body {
+  margin: 0;
+}
+#everything {
   display: flex;
   margin: 0 auto;
   max-width: 1920px;
   height: 100vh;
 }
-body > * {
+#everything > * {
   width: 50%;
   height: 100vh;
   overflow-y: auto;
@@ -49,10 +52,10 @@ hr {
   :root {
     font-size: initial;
   }
-  body > *:nth-child(1) {
+  #everything > *:nth-child(1) {
     width: 66%;
   }
-  body > *:nth-child(2) {
+  #everything > *:nth-child(2) {
     width: 34%;
   }
 }

@@ -21,12 +21,14 @@ import Showreel from "../components/Showreel.astro";
     <meta property="og:url" content="https://ninofiliu.com" />
   </head>
   <body>
-    <article>
-      <Dither />
-      <slot />
-    </article>
-    <div>
-      <Showreel />
+    <div id="everything">
+      <article>
+        <Dither />
+        <slot />
+      </article>
+      <div>
+        <Showreel />
+      </div>
     </div>
   </body>
 </html>
