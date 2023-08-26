@@ -34,8 +34,8 @@ const media = fs
     if (/\.(mp4|webm|mov)/.test(base)) {
       return {
         kind: "video",
-        desktopSrc: `/desktop/${base}.webm`,
-        mobileSrc: `/mobile/${base}.webm`,
+        desktopSrc: `/desktop/${base}.mp4`,
+        mobileSrc: `/mobile/${base}.mp4`,
       };
     }
     throw new Error(`unknown extension for ${base}`);

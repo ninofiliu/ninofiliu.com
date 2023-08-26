@@ -29,8 +29,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/2.mp4.webm",
-    mobileSrc: "/mobile/2.mp4.webm",
+    desktopSrc: "/desktop/2.mp4.mp4",
+    mobileSrc: "/mobile/2.mp4.mp4",
   },
   {
     kind: "img",
@@ -73,8 +73,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/6.mov.webm",
-    mobileSrc: "/mobile/6.mov.webm",
+    desktopSrc: "/desktop/6.mov.mp4",
+    mobileSrc: "/mobile/6.mov.mp4",
   },
   {
     kind: "img",
@@ -117,8 +117,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/10.mp4.webm",
-    mobileSrc: "/mobile/10.mp4.webm",
+    desktopSrc: "/desktop/10.mp4.mp4",
+    mobileSrc: "/mobile/10.mp4.mp4",
   },
   {
     kind: "img",
@@ -148,8 +148,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/13.mp4.webm",
-    mobileSrc: "/mobile/13.mp4.webm",
+    desktopSrc: "/desktop/13.mp4.mp4",
+    mobileSrc: "/mobile/13.mp4.mp4",
   },
   {
     kind: "img",
@@ -205,8 +205,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/18.mp4.webm",
-    mobileSrc: "/mobile/18.mp4.webm",
+    desktopSrc: "/desktop/18.mp4.mp4",
+    mobileSrc: "/mobile/18.mp4.mp4",
   },
   {
     kind: "img",
@@ -236,8 +236,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/21.webm.webm",
-    mobileSrc: "/mobile/21.webm.webm",
+    desktopSrc: "/desktop/21.webm.mp4",
+    mobileSrc: "/mobile/21.webm.mp4",
   },
   {
     kind: "img",
@@ -280,8 +280,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/25.mp4.webm",
-    mobileSrc: "/mobile/25.mp4.webm",
+    desktopSrc: "/desktop/25.mp4.mp4",
+    mobileSrc: "/mobile/25.mp4.mp4",
   },
   {
     kind: "img",
@@ -311,8 +311,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/28.mp4.webm",
-    mobileSrc: "/mobile/28.mp4.webm",
+    desktopSrc: "/desktop/28.mp4.mp4",
+    mobileSrc: "/mobile/28.mp4.mp4",
   },
   {
     kind: "img",
@@ -342,8 +342,8 @@ export const media: Media[] = [
   },
   {
     kind: "video",
-    desktopSrc: "/desktop/31.mp4.webm",
-    mobileSrc: "/mobile/31.mp4.webm",
+    desktopSrc: "/desktop/31.mp4.mp4",
+    mobileSrc: "/mobile/31.mp4.mp4",
   },
   {
     kind: "img",
