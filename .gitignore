@@ -22,6 +22,4 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
-public/desktop/
-public/mobile/
 ./media-index.ts
