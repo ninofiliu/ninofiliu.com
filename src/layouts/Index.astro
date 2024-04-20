@@ -34,11 +34,7 @@ import Showreel from "../components/Showreel.astro";
 </html>
 
 <script>
-  if (
-    location.hostname.endsWith("ninofiliu.com") ||
-    location.hostname.endsWith("netlify.app")
-  ) {
-    // @ts-ignore
+  if (location.hostname.includes("ninofiliu.com")) {
     const mixpanel = await import("mixpanel-browser");
     mixpanel.init("6c487cc89beda5d115a5e9223d831884");
   }
