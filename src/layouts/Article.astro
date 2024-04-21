@@ -1,0 +1,48 @@
+---
+import Shell from "../components/Shell.astro";
+---
+
+<Shell>
+  <main>
+    <nav>
+      <a href="/">Home</a>
+      <div>---</div>
+      <a href="/first-contact">First Contact</a>
+      <div>---</div>
+      <a href="https://www.instagram.com/nino.filiu">Instagram</a>
+      <a href="https://twitter.com/ninofiliu">Twitter</a>
+      <a href="https://github.com/ninofiliu">Github</a>
+      <a href="https://soundcloud.com/stanleyfatmax">Soundcloud</a>
+      <a href="https://ninofiliu.itch.io/">Itch</a>
+    </nav>
+    <article>
+      <slot />
+    </article>
+  </main>
+</Shell>
+
+<style>
+  main {
+    width: 100vw;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+  }
+  article {
+    flex: 1;
+  }
+  p {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 960px) {
+    main {
+      flex-direction: column;
+    }
+  }
+</style>

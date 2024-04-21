@@ -17,45 +17,29 @@ a:hover {
 body {
   margin: 0;
 }
-#everything {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1920px;
-  height: 100vh;
-}
-#everything > * {
-  width: 50%;
-  height: 100vh;
-  overflow-y: auto;
-}
-article {
-  padding: 1em;
-}
-img,
-video {
-  width: 100%;
-  display: block;
-}
 * {
   box-sizing: border-box;
-}
-h1 {
-  padding-top: 3em;
-  color: var(--color);
 }
 hr {
   padding-top: 5em;
   border: none;
   border-bottom: 2px solid white;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color);
+}
+img,
+video {
+  width: 100%;
+  display: block;
+}
 @media screen and (max-width: 960px) {
   :root {
     font-size: initial;
-  }
-  #everything > *:nth-child(1) {
-    width: 66%;
-  }
-  #everything > *:nth-child(2) {
-    width: 34%;
   }
 }

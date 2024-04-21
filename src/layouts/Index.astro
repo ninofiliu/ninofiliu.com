@@ -15,3 +15,32 @@ import Showreel from "../components/Showreel.astro";
     </div>
   </div>
 </Shell>
+
+<style>
+  #everything {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100vh;
+  }
+  #everything > * {
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  article {
+    padding: 1em;
+  }
+  h1 {
+    padding-top: 3em;
+  }
+
+  @media screen and (max-width: 960px) {
+    #everything > *:nth-child(1) {
+      width: 66%;
+    }
+    #everything > *:nth-child(2) {
+      width: 34%;
+    }
+  }
+</style>
