@@ -1,0 +1,34 @@
+---
+import "./global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nino Filiu</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2Ng+M/wHwAEAQH/7yMK/gAAAABJRU5ErkJggg=="
+    />
+    <link rel="preload" href="nino.jpg" as="image" type="image/jpg" />
+    <meta property="og:title" content="Nino Filiu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ninofiliu.com/poster.jpg" />
+    <meta property="og:url" content="https://ninofiliu.com" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<script>
+  if (location.hostname.includes("ninofiliu.com")) {
+    const mixpanel = await import("mixpanel-browser");
+    mixpanel.init("6c487cc89beda5d115a5e9223d831884", {
+      debug: true,
+      track_pageview: true,
+    });
+  }
+</script>
