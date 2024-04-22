@@ -39,6 +39,9 @@ video {
   height: auto;
   display: block;
 }
+article > p:first-child {
+  margin-top: 0;
+}
 @media screen and (max-width: 960px) {
   :root {
     font-size: initial;
