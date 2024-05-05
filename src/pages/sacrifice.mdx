@@ -1,0 +1,25 @@
+---
+layout: ../layouts/Article.astro
+---
+
+# Sacrifice (2023)
+
+**A semi-figurative interactive installation using DJ decks as a gamepad**
+
+_Pioneer DDJ200, ThreeJS, WebMIDI_
+
+---
+
+As a DJ, I once asked myself if the signal from my DJ controller, that is typically received by Rekordbox, could be received by a program of my making instead.
+
+As it turns out, it's totally feasible, and made very simple by the WebMIDI API that allows for the MIDI signal sent by controllers like the Pioneer DDJ200 to be intercepted by javascript code running in the browser.
+
+From then on, all I had to do to create an interactive installation based on this feature was to plug this MIDI signal to parameters of a 3D scene: jog wheels control the time, pads control colors, and knobs control the camera position.
+
+The 3D scene is nothing more than free textures and meshes from Mixamo and Sketchfab, with an added on-purpose bug (not clearing up the canvas between two frames) that serves as a glitchy post processing effect.
+
+Just like _First Contact_, the _Sacrifice_ is open sourced on my github.
+
+---
+
+Conceptually very simple, _Sacrifice_ is however very generous in the
