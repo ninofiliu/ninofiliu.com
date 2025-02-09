@@ -9,6 +9,7 @@ Local dev
 ```sh
 # once
 pnpm install
+ntl login
 # on media update
 source ./build-media-files.sh
 tsx ./build-media-index.ts
