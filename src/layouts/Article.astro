@@ -1,41 +1,29 @@
 ---
 import Shell from "../components/Shell.astro";
+import SideLinks from "../components/SideLinks.mdx";
 ---
 
 <Shell>
   <main>
-    <nav>
-      <a href="/">Home</a>
-      <div>---</div>
-      <a href="/cum-as-you-are">Cum As You Are</a>
-      <a href="/aggregate">Aggregate</a>
-      <a href="/first-contact">First Contact</a>
-      <a href="/sacrifice">Sacrifice</a>
-      <a href="https://ninofiliu.itch.io/whereareu">whereareu.online</a>
-      <a href="https://residenceevil.ch/amitheproblem/">Am I The Problem?</a>
-      <a href="https://smytten.blog">smytten.blog</a>
-      <a href="https://residence-evil.itch.io/cooking-for-william">
-        Cooking for William
-      </a>
-      <a href="https://www.instagram.com/p/CZhII8Vswjd/">Room XYFT</a>
-      <a href="https://www.instagram.com/p/CPtJSRtCvJF/">
-        As If My Phone Cares About Museums
-      </a>
-      <div>---</div>
-      <a href="https://www.instagram.com/nino.filiu">Instagram</a>
-      <a href="https://bsky.app/profile/ninofiliu.com">Bluesky</a>
-      <a href="https://twitter.com/ninofiliu">Twitter</a>
-      <a href="https://github.com/ninofiliu">Github</a>
-      <a href="https://ninofiliu.itch.io/">Itch</a>
-      <a
-        href="https://ifdigital.institutfrancais.com/en/professional/nino-filiu"
-      >
-        IFDigital
-      </a>
+    <h1 class="phone-only header">
+      <a href="/">Nino Filiu</a>
+      <a href="#phone-menu">☰</a>
+    </h1>
+    <nav class="desktop-only">
+      <a href="/">Nino Filiu</a>
+      <p>—</p>
+      <SideLinks />
     </nav>
     <article>
       <slot />
     </article>
+    <div id="phone-menu">
+      <h1 class="phone-only header">
+        <a href="/">Nino Filiu</a>
+        <a href="#">&times;</a>
+      </h1>
+      <SideLinks />
+    </div>
   </main>
 </Shell>
 
@@ -54,16 +42,49 @@ import Shell from "../components/Shell.astro";
     max-width: 256px;
     gap: 8px;
   }
+  nav :global(p) {
+    margin: 0;
+  }
   article {
     flex: 1;
   }
   p {
     width: 100%;
   }
+  @media screen and (min-width: 961px) {
+    .phone-only {
+      display: none;
+    }
+  }
 
   @media screen and (max-width: 960px) {
     main {
       flex-direction: column;
     }
+    .desktop-only {
+      display: none;
+    }
+  }
+
+  #phone-menu {
+    position: fixed;
+    display: none;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(0.5em);
+    overflow-y: auto;
+    padding: 1em;
+  }
+  #phone-menu:target {
+    display: block;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .header a {
+    text-decoration: none;
   }
 </style>
