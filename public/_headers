@@ -1,0 +1,3 @@
+/supermosh/*
+  Access-Control-Allow-Origin: https://supermosh.github.io
+  Cross-Origin-Resource-Policy: cross-origin
