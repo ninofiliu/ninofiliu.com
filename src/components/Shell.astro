@@ -17,13 +17,20 @@ import "./global.css";
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://ninofiliu.com/poster.jpg" />
     <meta property="og:url" content="https://ninofiliu.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <slot />
   </body>
 </html>
 
-<script>
+<!-- <script>
   if (location.hostname.includes("ninofiliu.com")) {
     const mixpanel = await import("mixpanel-browser");
     mixpanel.init("6c487cc89beda5d115a5e9223d831884", {
@@ -31,4 +38,4 @@ import "./global.css";
       track_pageview: true,
     });
   }
-</script>
+</script> -->

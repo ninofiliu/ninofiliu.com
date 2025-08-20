@@ -1,6 +1,7 @@
 :root {
   color-scheme: dark;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: "EB Garamond";
   font-size: 1.5em;
   /* should be in sync with Dither.astro */
   --color: #4b4;
@@ -45,5 +46,15 @@ article > p:first-child {
 @media screen and (max-width: 960px) {
   :root {
     font-size: initial;
+  }
+}
+
+@keyframes flash {
+  0% {
+  }
+  50% {
+    filter: brightness(0.5);
+  }
+  100% {
   }
 }

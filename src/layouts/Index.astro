@@ -1,46 +1,105 @@
 ---
 import Dither from "../components/Dither.astro";
 import Shell from "../components/Shell.astro";
-import Showreel from "../components/Showreel.astro";
+import IndexIntro from "./IndexIntro.mdx";
+import staggeredCover from "../media/staggered/shadow5.png";
+import aggregateCover from "../media/aggregate/running.jpg";
+import sacrificeCover from "../media/sacrifice/cover.png";
+import { Image } from "astro:assets";
+
+type Work = {
+  cover: ImageMetadata;
+  title: string;
+  desc: string;
+  link: string;
+};
+
+const works: Work[] = [
+  {
+    cover: staggeredCover,
+    title: "Staggered",
+    desc: "A playable poem about shock states and the death of the child self / Personal work / 2025",
+    link: "/staggered",
+  },
+  {
+    cover: aggregateCover,
+    title: "Aggregate",
+    desc: "A queer video game exploring the concepts of desire paths, personnified machine learning, and cruising / With Distraction Collective / 2024",
+    link: "/aggregate",
+  },
+  {
+    cover: sacrificeCover,
+    title: "Sacrifice",
+    desc: "A semi-figurative interactive installation using DJ decks as a gamepad / Personal Work / 2023",
+    link: "/sacrifice",
+  },
+];
 ---
 
 <Shell>
-  <div id="everything">
-    <article>
-      <Dither />
-      <slot />
-    </article>
-    <div>
-      <Showreel />
-    </div>
+  <div class="landing">
+    <Dither />
+    <IndexIntro />
   </div>
+  {
+    works.map((work) => (
+      <a class="work" href={work.link}>
+        <Image src={work.cover} alt="" />
+        <div class="title">{work.title}</div>
+        <div class="desc">{work.desc}</div>
+      </a>
+    ))
+  }
 </Shell>
 
 <style>
-  #everything {
+  body {
+  }
+  .landing {
     display: flex;
-    margin: 0 auto;
-    max-width: 1920px;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    margin: 5% auto;
+    text-align: center;
   }
-  #everything > * {
-    width: 50%;
-    height: 100vh;
-    overflow-y: auto;
+  .work {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    text-decoration: none;
+    color: white;
   }
-  article {
-    padding: 1em;
+  .work:hover {
   }
-  h1 {
-    padding-top: 3em;
+  .work img {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
   }
-
-  @media screen and (max-width: 960px) {
-    #everything > *:nth-child(1) {
-      width: 66%;
-    }
-    #everything > *:nth-child(2) {
-      width: 34%;
-    }
+  .work:hover img {
+    animation: flash 0.1s infinite;
+  }
+  .work .title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 5em;
+    text-transform: uppercase;
+    vertical-align: text-top;
+    line-height: 1cap;
+  }
+  .work .desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: end;
   }
 </style>
