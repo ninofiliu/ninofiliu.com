@@ -9,6 +9,10 @@
   background-color: black;
   color: white;
 }
+*::selection {
+  background-color: red;
+  color: white;
+}
 a {
   color: var(--color);
 }
