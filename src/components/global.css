@@ -1,11 +1,11 @@
 :root {
   color-scheme: dark;
   /* font-family: monospace; */
-  font-family: "EB Garamond";
+  font-family: "Instrument Serif";
   font-size: 1.5em;
   /* should be in sync with Dither.astro */
-  --color: #4b4;
-  --accent: lime;
+  --color: hsl(0 75% 50%);
+  --accent: hsl(0 100% 75%);
   background-color: black;
   color: white;
 }
@@ -53,7 +53,7 @@ article > p:first-child {
   0% {
   }
   50% {
-    filter: brightness(0.7);
+    filter: brightness(0.8);
   }
   100% {
   }

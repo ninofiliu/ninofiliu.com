@@ -154,15 +154,17 @@ const works: Work[] = [
     <Dither />
     <IndexIntro />
   </div>
-  {
-    works.map((work) => (
-      <a class="work" href={work.link}>
-        <Image src={work.cover} alt="" />
-        <div class="title">{work.title}</div>
-        <div class="desc">{work.desc}</div>
-      </a>
-    ))
-  }
+  <div class="works">
+    {
+      works.map((work) => (
+        <a class="work" href={work.link}>
+          <Image src={work.cover} alt="" />
+          <div class="title">{work.title}</div>
+          <div class="desc">{work.desc}</div>
+        </a>
+      ))
+    }
+  </div>
   <article>
     <slot />
   </article>
@@ -181,14 +183,22 @@ const works: Work[] = [
     margin: 5% auto;
     text-align: center;
   }
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .work {
+    width: 100%;
     position: relative;
     min-height: 500px;
     display: flex;
     text-decoration: none;
     color: white;
   }
-  .work:hover {
+  @media (min-width: 1440px) {
+    .work {
+      width: 50%;
+    }
   }
   .work img {
     position: absolute;
@@ -197,10 +207,11 @@ const works: Work[] = [
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.8);
+    filter: brightness(0.7);
     image-rendering: crisp-edges;
   }
   .work:hover img {
+    filter: none;
     animation: strobe 0.1s infinite;
   }
   @media (prefers-reduced-motion) {
@@ -217,6 +228,10 @@ const works: Work[] = [
     text-transform: uppercase;
     vertical-align: text-top;
     line-height: 1cap;
+    word-break: break-all;
+    text-align: justify;
+    transform: translateY(0.025em);
+    text-shadow: 0 0 0.1em rgba(255, 0, 0, 0.5);
   }
   .work .desc {
     position: absolute;
@@ -224,6 +239,7 @@ const works: Work[] = [
     width: 100%;
     font-size: 1.5em;
     text-align: end;
+    text-shadow: 0 0 0.1em rgba(255, 0, 0, 0.5);
   }
   article {
     padding: 5%;

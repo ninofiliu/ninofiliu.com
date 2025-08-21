@@ -10,8 +10,8 @@
       super();
       // should be in sync with global.css
       const theme = {
-        color: "green",
-        accent: "lime",
+        color: "hsl(0 75% 50%)",
+        accent: "hsl(0 100% 90%)",
       };
 
       const gcd = (a: number, b: number): number => (b ? gcd(b, a % b) : a);
@@ -41,10 +41,10 @@
         const paint = async () => {
           const palette = [
             "black",
+            "black",
             theme.color,
+            "hsl(0 100% 50%)",
             theme.accent,
-            "lime",
-            "white",
             "white",
             "white",
             "white",
