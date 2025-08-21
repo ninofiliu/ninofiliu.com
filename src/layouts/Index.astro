@@ -2,10 +2,27 @@
 import Dither from "../components/Dither.astro";
 import Shell from "../components/Shell.astro";
 import IndexIntro from "./IndexIntro.mdx";
+import { Image } from "astro:assets";
+
 import staggeredCover from "../media/staggered/shadow5.png";
 import aggregateCover from "../media/aggregate/running.jpg";
 import sacrificeCover from "../media/sacrifice/cover.png";
-import { Image } from "astro:assets";
+import sparkPlugsCover from "../media/spark-plugs/cover.png";
+import whereareuCover from "../media/whereareu/cover.png";
+import amITheProblemCover from "../media/am-i-the-problem/cover.png";
+import smyttenBlogCover from "../media/smytten/cover.jpg";
+import cookingForWilliamCover from "../media/cooking-for-william/cover.png";
+import firstContactCover from "../media/first-contact/cover.png";
+import butTheFleshIsWeakCover from "../media/but-the-flesh-is-weak/cover.jpg";
+import roomXYFTCover from "../media/room-xyft/cover.png";
+import asIfCover from "../media/as-if/cover.jpg";
+import tdjCover from "../media/tdj/cover.png";
+import questsCover from "../media/quests/cover.png";
+import cumAsYouAreCover from "../media/cum-as-you-are/cover.png";
+import bodyHeatCover from "../media/body-heat/cover.jpg";
+import theColorOfTheWind from "../media/the-color-of-the-wind/cover.jpg";
+import ambientCGCover from "../media/ambientcg/Rock031.jpg";
+import supermoshCover from "../media/supermosh/vlcsnap-2025-08-21-12h03m50s879.png";
 
 type Work = {
   cover: ImageMetadata;
@@ -18,8 +35,20 @@ const works: Work[] = [
   {
     cover: staggeredCover,
     title: "Staggered",
-    desc: "A playable poem about shock states and the death of the child self / Personal work / 2025",
+    desc: "A playable poem about shock states and the death of the child self / 2025",
     link: "/staggered",
+  },
+  {
+    cover: sparkPlugsCover,
+    title: "Spark Plugs",
+    desc: "A series of 3D renders exploring ideas of urban supernaturality / 2025",
+    link: "/spark-plugs",
+  },
+  {
+    cover: whereareuCover,
+    title: "whereareu.online",
+    desc: "A video game coded in 48h using the web as a medium for interactive storytelling / 2024",
+    link: "https://ninofiliu.itch.io/whereareu",
   },
   {
     cover: aggregateCover,
@@ -28,10 +57,94 @@ const works: Work[] = [
     link: "/aggregate",
   },
   {
+    cover: amITheProblemCover,
+    title: "Am I The Problem?",
+    desc: "A first person walking sim where players face troubling confessions from real 4chan and reddit stories / With Distraction Collective x Residence Evil / 2024",
+    link: "https://residenceevil.ch/amitheproblem/",
+  },
+  {
+    cover: smyttenBlogCover,
+    title: "smytten.blog",
+    desc: "The sinister story of an american teenager told using the medium of a blog post with hackable hidden pages / With Distraction Collective x Residence Evil / 2023",
+    link: "https://smytten.blog",
+  },
+  {
     cover: sacrificeCover,
     title: "Sacrifice",
-    desc: "A semi-figurative interactive installation using DJ decks as a gamepad / Personal Work / 2023",
+    desc: "A 3D video installation using DJ decks as a gamepad / Personal work / 2023",
     link: "/sacrifice",
+  },
+  {
+    cover: cookingForWilliamCover,
+    title: "Cooking for William",
+    desc: "A horror visual novel disguised as a cozy cooking game / With Melanie Courtinat & Pierre Moulin / 2023",
+    link: "https://residence-evil.itch.io/cooking-for-william",
+  },
+  {
+    cover: firstContactCover,
+    title: "First Contact",
+    desc: "An interactive installation questioning our interpretation of exotic consciousness / 2023",
+    link: "/first-contact",
+  },
+  {
+    cover: butTheFleshIsWeakCover,
+    title: "But The Flesh Is Weak",
+    desc: "A serie of installations and performances involving plants, dance, fashion, electronics, and sounds / With Samuel Fasse & Amosphère / 2022",
+    link: "https://www.instagram.com/p/CoKGqvmryLl/?img_index=4",
+  },
+  {
+    cover: roomXYFTCover,
+    title: "Room XYFT",
+    desc: "An immersive installation involving audioreactive visuals and modular synths / With Aleksey Larionov / 2022",
+    link: "https://www.instagram.com/larionov_aleksey/p/CZ4bzYGLQ9p/",
+  },
+  {
+    cover: asIfCover,
+    title: "As If My Phone Cares About Museums",
+    desc: "A sculpture that gets scared when you get too close, with visuals evolving based on ultrasonic sensory input / With Paul Creange / 2021",
+    link: "https://www.instagram.com/p/CPtJSRtCvJF/",
+  },
+  {
+    cover: tdjCover,
+    title: "TDJ - Where Is My Angel",
+    desc: "CGI and VFX for a video clip directed by Melchior Leroux / 2025",
+    link: "/tdj",
+  },
+  {
+    cover: questsCover,
+    title: "Quests",
+    desc: "Visuals for Inès Cherifi's EP made inside Unreal Engine / 2025",
+    link: "/quests",
+  },
+  {
+    cover: cumAsYouAreCover,
+    title: "Cum As You Are",
+    desc: "An installation by Arvida Byström where a robot makes love to itself / 2025",
+    link: "/cum-as-you-are",
+  },
+  {
+    cover: bodyHeatCover,
+    title: "Body Heat",
+    desc: "An interactive light work by Paul Créange exploring the relation between the presence of the body in space / 2023",
+    link: "https://www.instagram.com/p/CygEh-bthL7/",
+  },
+  {
+    cover: theColorOfTheWind,
+    title: "The Color Of The Wind",
+    desc: "An in situ LED sculpture by Paul Créange which color changes based on the wind direction and speed / 2020",
+    link: "https://poush.fr/en/programmation/the-color-of-the-wind-by-paul-creange/",
+  },
+  {
+    cover: ambientCGCover,
+    title: "AmbientCG Material Importer",
+    desc: "A Blender extension downloaded 16K times / 2024",
+    link: "https://extensions.blender.org/add-ons/ambientcg-material-importer/",
+  },
+  {
+    cover: supermoshCover,
+    title: "Supermosh",
+    desc: "The world's first browser-based datamosh editor / 2021",
+    link: "https://supermosh.github.io/",
   },
 ];
 ---
@@ -82,6 +195,7 @@ const works: Work[] = [
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+    image-rendering: crisp-edges;
   }
   .work:hover img {
     animation: flash 0.1s infinite;
