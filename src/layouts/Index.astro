@@ -163,6 +163,9 @@ const works: Work[] = [
       </a>
     ))
   }
+  <article>
+    <slot />
+  </article>
 </Shell>
 
 <style>
@@ -198,7 +201,13 @@ const works: Work[] = [
     image-rendering: crisp-edges;
   }
   .work:hover img {
-    animation: flash 0.1s infinite;
+    animation: strobe 0.1s infinite;
+  }
+  @media (prefers-reduced-motion) {
+    .work:hover img {
+      animation: none;
+      opacity: 0.5;
+    }
   }
   .work .title {
     position: absolute;
@@ -215,5 +224,8 @@ const works: Work[] = [
     width: 100%;
     font-size: 1.5em;
     text-align: end;
+  }
+  article {
+    padding: 5%;
   }
 </style>

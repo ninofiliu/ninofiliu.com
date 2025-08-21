@@ -49,11 +49,11 @@ article > p:first-child {
   }
 }
 
-@keyframes flash {
+@keyframes strobe {
   0% {
   }
   50% {
-    filter: brightness(0.5);
+    filter: brightness(0.7);
   }
   100% {
   }

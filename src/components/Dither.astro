@@ -114,6 +114,11 @@
 
 <style>
   canvas:hover {
-    animation: flash 0.1s infinite;
+    animation: strobe 0.1s infinite;
+  }
+  @media (prefers-reduced-motion) {
+    canvas:hover {
+      animation: none;
+    }
   }
 </style>
