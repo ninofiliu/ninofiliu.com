@@ -9,18 +9,14 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "mixpanel-browser": "^2.64.0"
-  },
   "devDependencies": {
-    "@astrojs/mdx": "^4.2.6",
-    "@types/mixpanel-browser": "^2.60.0",
-    "@types/node": "^22.15.17",
-    "astro": "^5.7.12",
-    "prettier": "^3.5.3",
+    "@astrojs/mdx": "^4.3.13",
+    "@types/node": "^22.19.3",
+    "astro": "^5.16.6",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "sharp": "^0.34.1",
-    "tsx": "^4.19.4"
+    "sharp": "^0.34.5",
+    "tsx": "^4.21.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
