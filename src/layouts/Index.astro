@@ -1,28 +1,29 @@
 ---
+import { Image } from "astro:assets";
 import Dither from "../components/Dither.astro";
 import Shell from "../components/Shell.astro";
 import IndexIntro from "./IndexIntro.mdx";
-import { Image } from "astro:assets";
 
-import staggeredCover from "../media/staggered/shadow5.png";
 import aggregateCover from "../media/aggregate/running.jpg";
-import sacrificeCover from "../media/sacrifice/cover.png";
-import sparkPlugsCover from "../media/spark-plugs/cover.png";
-import whereareuCover from "../media/whereareu/cover.png";
 import amITheProblemCover from "../media/am-i-the-problem/cover.png";
-import smyttenBlogCover from "../media/smytten/cover.jpg";
-import cookingForWilliamCover from "../media/cooking-for-william/cover.png";
-import firstContactCover from "../media/first-contact/cover.png";
-import butTheFleshIsWeakCover from "../media/but-the-flesh-is-weak/cover.jpg";
-import roomXYFTCover from "../media/room-xyft/cover.png";
-import asIfCover from "../media/as-if/cover.jpg";
-import tdjCover from "../media/tdj/cover.png";
-import questsCover from "../media/quests/cover.png";
-import cumAsYouAreCover from "../media/cum-as-you-are/cover.png";
-import bodyHeatCover from "../media/body-heat/cover.jpg";
-import theColorOfTheWind from "../media/the-color-of-the-wind/cover.jpg";
 import ambientCGCover from "../media/ambientcg/Rock031.jpg";
+import anemoiaCover from "../media/anemoia/cover2.png";
+import asIfCover from "../media/as-if/cover.jpg";
+import bodyHeatCover from "../media/body-heat/cover.jpg";
+import butTheFleshIsWeakCover from "../media/but-the-flesh-is-weak/cover.jpg";
+import cookingForWilliamCover from "../media/cooking-for-william/cover.png";
+import cumAsYouAreCover from "../media/cum-as-you-are/cover.png";
+import firstContactCover from "../media/first-contact/cover.png";
+import questsCover from "../media/quests/cover.png";
+import roomXYFTCover from "../media/room-xyft/cover.png";
+import sacrificeCover from "../media/sacrifice/cover.png";
+import smyttenBlogCover from "../media/smytten/cover.jpg";
+import sparkPlugsCover from "../media/spark-plugs/cover.png";
+import staggeredCover from "../media/staggered/shadow5.png";
 import supermoshCover from "../media/supermosh/vlcsnap-2025-08-21-12h03m50s879.png";
+import tdjCover from "../media/tdj/cover.png";
+import theColorOfTheWind from "../media/the-color-of-the-wind/cover.jpg";
+import whereareuCover from "../media/whereareu/cover.png";
 
 type Work = {
   cover: ImageMetadata;
@@ -43,6 +44,12 @@ const works: Work[] = [
     title: "Aggregate",
     desc: "A queer video game exploring the concepts of desire paths, personnified machine learning, and cruising / With Distraction Collective / 2024",
     link: "/aggregate",
+  },
+  {
+    cover: anemoiaCover,
+    title: "Anemoia",
+    desc: "How nostalgiacore rewrites our memory: a playable dissertation / 2025",
+    link: "https://ninofiliu.itch.io/anemoia",
   },
   {
     cover: amITheProblemCover,
